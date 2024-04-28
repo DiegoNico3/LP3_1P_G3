@@ -1,8 +1,8 @@
 /* Orden de ejecucion: programa0, programa2, programa1 
    Proceso que implemente un handler que notifique cuando reciba las principales señales enviadas por el programa 1
-   Grupo:
+   Grupo 3:
    * Maria Luján Melgarejo Acosta       5111244 
-   * Diego Nicolas Moreno Saldivar  
+   * Diego Nicolas Moreno Saldivar      5689969
 */
 #include <stdio.h>
 #include <stdlib.h>
