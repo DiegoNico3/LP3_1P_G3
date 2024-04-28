@@ -1,9 +1,9 @@
 /* Orden de ejecucion: programa0, programa2, programa1 
    Este programa está diseñado para crear procesos hijos utilizando 
    la llamada al sistema fork() y luego genera el archivo donde coloca el pid, señal y delay de los 3 procesos
-   Grupo:
+   Grupo 3:
    * Maria Luján Melgarejo Acosta       5111244 
-   * Diego Nicolas Moreno Saldivar  
+   * Diego Nicolas Moreno Saldivar      5689969
 */
 #include <stdio.h>
 #include <stdlib.h>
