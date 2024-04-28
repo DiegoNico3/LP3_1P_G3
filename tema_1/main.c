@@ -1,10 +1,16 @@
+/* 
+Este programa utiliza un árbol binario completo y el algoritmo mergesort para ordenar un array de enteros en paralelo, 
+manejando múltiples procesos y mostrando la estructura y resultados del árbol.
+   Grupo 3:
+   * Maria Luján Melgarejo Acosta       5111244 
+   * Diego Nicolas Moreno Saldivar      5689969
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/wait.h>
 #include <unistd.h>
 #include <math.h>
-
 #include <fcntl.h>
 #include <sys/mman.h>
 #include <sys/stat.h>
@@ -28,7 +34,6 @@ void printArrayInTree(int arr[], int start, int end, int totalDepth, int maxDept
     for (int i = 0; i < pow(2, maxDepth); i++) {
         for (int k = pow((totalDepth - maxDepth),2); k > 0;k--) {
             printf("\t");
-
         }
     }
     printf("{");
