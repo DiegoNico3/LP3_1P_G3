@@ -7,10 +7,10 @@ SRCS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.c' 
 HEADERS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.h' -print)
 
 main: $(SRCS) $(HEADERS)
-	$(CC) $(CFLAGS) $(SRCS) -o "$@" -lrt
+	$(CC) $(CFLAGS) $(SRCS) -o "$@" -lrt -lm
 
 main-debug: $(SRCS) $(HEADERS)
-	$(CC) $(CFLAGS) -O0 $(SRCS) -o "$@" -lrt
+	$(CC) $(CFLAGS) -O0 $(SRCS) -o "$@" -lrt -lm
 
 clean:
 	rm -f main main-debug
